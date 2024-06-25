@@ -1,291 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Karajás Hotel</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Poppins"
-  />
-  <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
+   <head>
+     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">     
+   </head>
+   <title>Karajás Hotel</title>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" href="styles.css" />
+   <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      />
+   <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+   <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
       font-family: "Poppins", sans-serif;
-    }
-    body {
+      }
+      body {
       font-size: 16px;
-    }
-    .w3-half img {
+      }
+      .w3-half img {
       margin-bottom: -6px;
       margin-top: 16px;
       opacity: 0.8;
       cursor: pointer;
-    }
-    .w3-half img:hover {
+      }
+      .w3-half img:hover {
       opacity: 1;
-    }
-  </style>
-  <body>
-    <!-- Sidebar/menu -->
-    <nav
-      class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
-      style="z-index:3;width:300px;font-weight:bold;"
-      id="mySidebar"
-    >
-      <br />
-      <a
-        href="javascript:void(0)"
-        onclick="w3_close()"
-        class="w3-button w3-hide-large w3-display-topleft"
-        style="width:100%;font-size:22px"
-        >Close Menu</a
-      >
-      <div>
-        <!-- <b>Karajás<br />Hotel</b> -->
-        <img
-          src="./assets/logosemfundo.png"
-          alt="karajashotel"
-          height="80px"
-          style="margin-bottom: 25px; margin-left: 0px; padding: 0px"
-        />
-      </div>
-      <div class="w3-bar-block">
-        <a
-          href="#"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white"
-          >Home</a
-        >
-        <a
-          href="#sobrenos"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white"
-          >Sobre Nós</a
-        >
-        <a
-          href="#localizacao"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white"
-          >Localização</a
-        >
-
-        <a
-          href="#acomodacoes"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white"
-          >Acomodações</a
-        >
-        <a
-          href="#contato"
-          onclick="w3_close()"
-          class="w3-bar-item w3-button w3-hover-white"
-          >Contato</a
-        >
-      </div>
-    </nav>
-
-    <!-- Top menu on small screens -->
-    <header
-      class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding"
-    >
-      <a
-        href="javascript:void(0)"
-        class="w3-button w3-red w3-margin-right"
-        onclick="w3_open()"
-        >☰</a
-      >
-      <span>Karajás Hotel</span>
-    </header>
-
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div
-      class="w3-overlay w3-hide-large"
-      onclick="w3_close()"
-      style="cursor:pointer"
-      title="close side menu"
-      id="myOverlay"
-    ></div>
-
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:340px;margin-right:40px">
-      <!-- Header -->
-      <div class="w3-container" style="margin-top:80px" id="sobrenos">
-        <h1 class="w3-jumbo"><b>Karajás Hotel</b></h1>
-        <h1 class="w3-xxxlarge w3-text-red"><b>Sobre Nós.</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round" />
-      </div>
-
-      <!-- Photo grid (modal) -->
-      <div class="w3-row-padding">
-        <p>
-          Inaugurado em outubro de 1994 pelo empresário João Abreu Luz, o
-          Karajás Hotel se tornou referência no mercado hoteleiro de São Félix
-          do Araguaia/MT pela hospitalidade e qualidade dos serviços oferecidos.
-          Desde o início de suas operações, o Karajás Hotel motivou o
-          crescimento econômico da região através do turismo. A localização do
-          hotel é privilegiada, próxima ao Centro e à margem do exuberante Rio
-          Araguaia, que nos encanta com um lindo nascer do sol.
-        </p>
-      </div>
-
-      <!-- Modal for full size images on click-->
+      }
+   </style>
+   <body>
+      <!-- Sidebar/menu -->
+      <nav
+         class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
+         style="z-index:3;width:300px;font-weight:bold;"
+         id="mySidebar"
+         >
+         <br />
+         <a
+            href="javascript:void(0)"
+            onclick="w3_close()"
+            class="w3-button w3-hide-large w3-display-topleft"
+            style="width:100%;font-size:22px"
+            >Close Menu</a
+            >
+         <div>
+            <!-- <b>Karajás<br />Hotel</b> -->
+            <img
+               src="./assets/logosemfundo.png"
+               alt="karajashotel"
+               height="80px"
+               style="margin-bottom: 25px; margin-left: 0px; padding: 0px"
+               />
+         </div>
+         <div class="w3-bar-block">
+            <a
+               href="#"
+               onclick="w3_close()"
+               class="w3-bar-item w3-button w3-hover-white"
+               >Home</a
+               >
+            <a
+               href="#sobrenos"
+               onclick="w3_close()"
+               class="w3-bar-item w3-button w3-hover-white"
+               >Sobre Nós</a
+               >
+            <a
+               href="#localizacao"
+               onclick="w3_close()"
+               class="w3-bar-item w3-button w3-hover-white"
+               >Localização</a
+               >
+            <a
+               href="#acomodacoes"
+               onclick="w3_close()"
+               class="w3-bar-item w3-button w3-hover-white"
+               >Acomodações</a
+               >
+            <a
+               href="#contato"
+               onclick="w3_close()"
+               class="w3-bar-item w3-button w3-hover-white"
+               >Contato</a
+               >
+         </div>
+      </nav>
+      <!-- Top menu on small screens -->
+      <header
+         class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding"
+         >
+         <a
+            href="javascript:void(0)"
+            class="w3-button w3-red w3-margin-right"
+            onclick="w3_open()"
+            >☰</a
+            >
+         <span>Karajás Hotel</span>
+      </header>
+      <!-- Overlay effect when opening sidebar on small screens -->
       <div
-        id="modal01"
-        class="w3-modal w3-black"
-        style="padding-top:0"
-        onclick="this.style.display='none'"
-      >
-        <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-        <div
-          class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
-        >
-          <img id="img01" class="w3-image" />
-          <p id="caption"></p>
-        </div>
+         class="w3-overlay w3-hide-large"
+         onclick="w3_close()"
+         style="cursor:pointer"
+         title="close side menu"
+         id="myOverlay"
+         ></div>
+      <!-- !PAGE CONTENT! -->
+      <div class="w3-main" style="margin-left:340px;margin-right:40px">
+         <!-- Header -->
+         <div class="w3-container" style="margin-top:80px" id="sobrenos">
+            <h1 class="w3-jumbo"><b>Karajás Hotel</b></h1>
+            <h1 class="w3-xxxlarge w3-text-red"><b>Sobre Nós.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round" />
+         </div>
+         <!-- Photo grid (modal) -->
+         <div class="w3-row-padding">
+            <p>
+               Inaugurado em outubro de 1994 pelo empresário João Abreu Luz, o
+               Karajás Hotel se tornou referência no mercado hoteleiro de São Félix
+               do Araguaia/MT pela hospitalidade e qualidade dos serviços oferecidos.
+               Desde o início de suas operações, o Karajás Hotel motivou o
+               crescimento econômico da região através do turismo. A localização do
+               hotel é privilegiada, próxima ao Centro e à margem do exuberante Rio
+               Araguaia, que nos encanta com um lindo nascer do sol.
+            </p>
+         </div>
+         <!-- Modal for full size images on click-->
+         <div
+            id="modal01"
+            class="w3-modal w3-black"
+            style="padding-top:0"
+            onclick="this.style.display='none'"
+            >
+            <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+            <div
+               class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+               >
+               <img id="img01" class="w3-image" />
+               <p id="caption"></p>
+            </div>
+         </div>
+         <!-- Services -->
+         <div class="w3-container" id="localizacao" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Localização.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round" />
+            <p>
+               Estamos localizados às margens do Rio Araguaia. Venha nos conhecer!
+            </p>
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15632.33002854533!2d-50.6624786!3d-11.6174679!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1f4110c95e9630b3!2sKaraj%C3%A1s+Hotel!5e0!3m2!1spt-BR!2sbr!4v1561324149343!5m2!1spt-BR!2sbr"
+               width="600"
+               height="450"
+               frameborder="0"
+               style="border:0"
+               allowfullscreen
+               ></iframe>
+         </div>
+         <!-- Packages / Pricing Tables -->
+         <div class="w3-container" id="acomodacoes" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Acomodações.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round" />
+         </div>
+         <div class="w3-row-padding">
+            <div class="w3-half w3-margin-bottom">
+               <ul class="w3-ul w3-light-grey w3-center">
+                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Quarto Simples</li>
+                  <li class="w3-padding-16">Café da Manhã</li>
+                  <li class="w3-padding-16">WiFi</li>
+                  <li class="w3-padding-16">Estacionamento</li>
+                  <li class="w3-padding-16">Ar Condicionado</li>
+                  <li class="w3-padding-16">1 Cama</li>
+                  <li class="w3-padding-16">
+                     <h2>R$ 100</h2>
+                     <span class="w3-opacity">por noite</span>
+                  </li>
+               </ul>
+            </div>
+            <div class="w3-half">
+               <ul class="w3-ul w3-light-grey w3-center">
+                  <li class="w3-red w3-xlarge w3-padding-32">Quarto Duplo</li>
+                  <li class="w3-padding-16">Café da Manhã</li>
+                  <li class="w3-padding-16">WiFi</li>
+                  <li class="w3-padding-16">Estacionamento</li>
+                  <li class="w3-padding-16">Ar Condicionado</li>
+                  <li class="w3-padding-16">2 Camas</li>
+                  <li class="w3-padding-16">
+                     <h2>R$ 150</h2>
+                     <span class="w3-opacity">por noite</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <!-- Contact -->
+         <div class="w3-container" id="contato" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-red"><b>Contato.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="w3-round" />
+            <p>
+               Nos envie uma mensagem que entraremos em contato.
+            </p>
+            <form target="_blank">
+               <div class="w3-section">
+                  <label>Nome</label>
+                  <input
+                     class="w3-input w3-border"
+                     type="text"
+                     name="Name"
+                     onchange="NameChanged()"
+                     required
+                     />
+               </div>
+               <div class="w3-section">
+                  <label>E-mail</label>
+                  <input
+                     class="w3-input w3-border"
+                     type="text"
+                     name="Email"
+                     onchange="EmailChanged()"
+                     required
+                     />
+               </div>
+               <div class="w3-section">
+                  <label>Mensagem</label>
+                  <input
+                     class="w3-input w3-border"
+                     type="text"
+                     name="Message"
+                     onchange="MessageChanged()"
+                     required
+                     />
+               </div>
+               <a
+                  name="botao"
+                  type="button"
+                  class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"
+                  onclick="Teste()"
+                  >
+               Enviar Mensagem
+               </a>
+            </form>
+         </div>
+         <div class="w3-container" style="margin-top: 40px">
+            <div class="w3-container" style="display: inline;">
+               <img src="./assets/phone.png" height="32px" alt="telefone" />
+               <p style="display: inline">Telefone:</p>
+               <span>(66) 3522-1343</span>
+            </div>
+            <div class="w3-container" style="display: inline">
+               <img src="./assets/whatsapp.png" height="32px" alt="whatsapp" />
+               <p style="display: inline">WhatsApp:</p>
+               <span>(66) 9 8402-2241</span>
+            </div>
+         </div>
+         <!-- End page content -->
       </div>
-
-      <!-- Services -->
-      <div class="w3-container" id="localizacao" style="margin-top:75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Localização.</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round" />
-        <p>
-          Estamos localizados às margens do Rio Araguaia. Venha nos conhecer!
-        </p>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15632.33002854533!2d-50.6624786!3d-11.6174679!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1f4110c95e9630b3!2sKaraj%C3%A1s+Hotel!5e0!3m2!1spt-BR!2sbr!4v1561324149343!5m2!1spt-BR!2sbr"
-          width="600"
-          height="450"
-          frameborder="0"
-          style="border:0"
-          allowfullscreen
-        ></iframe>
+      <!-- W3.CSS Container -->
+      <div
+         class="w3-light-grey w3-container w3-padding-32"
+         style="margin-top:75px;padding-right:58px"
+         >
+         <p class="w3-right">
+            Designed by
+            <a
+               href="https://www.linkedin.com/in/h%C3%A9ber-abreu-926823a8/"
+               title="W3.CSS"
+               target="_blank"
+               class="w3-hover-opacity"
+               >Héber Abreu</a
+               >
+         </p>
       </div>
-
-      <!-- Packages / Pricing Tables -->
-      <div class="w3-container" id="acomodacoes" style="margin-top:75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Acomodações.</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round" />
-      </div>
-
-      <div class="w3-row-padding">
-        <div class="w3-half w3-margin-bottom">
-          <ul class="w3-ul w3-light-grey w3-center">
-            <li class="w3-dark-grey w3-xlarge w3-padding-32">Quarto Simples</li>
-            <li class="w3-padding-16">Café da Manhã</li>
-            <li class="w3-padding-16">WiFi</li>
-            <li class="w3-padding-16">Estacionamento</li>
-            <li class="w3-padding-16">Ar Condicionado</li>
-            <li class="w3-padding-16">1 Cama</li>
-            <li class="w3-padding-16">
-              <h2>R$ 100</h2>
-              <span class="w3-opacity">por noite</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="w3-half">
-          <ul class="w3-ul w3-light-grey w3-center">
-            <li class="w3-red w3-xlarge w3-padding-32">Quarto Duplo</li>
-            <li class="w3-padding-16">Café da Manhã</li>
-            <li class="w3-padding-16">WiFi</li>
-            <li class="w3-padding-16">Estacionamento</li>
-            <li class="w3-padding-16">Ar Condicionado</li>
-            <li class="w3-padding-16">2 Camas</li>
-            <li class="w3-padding-16">
-              <h2>R$ 150</h2>
-              <span class="w3-opacity">por noite</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Contact -->
-      <div class="w3-container" id="contato" style="margin-top:75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Contato.</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round" />
-        <p>
-          Nos envie uma mensagem que entraremos em contato.
-        </p>
-        <form target="_blank">
-          <div class="w3-section">
-            <label>Nome</label>
-            <input
-              class="w3-input w3-border"
-              type="text"
-              name="Name"
-              onchange="NameChanged()"
-              required
-            />
-          </div>
-          <div class="w3-section">
-            <label>E-mail</label>
-            <input
-              class="w3-input w3-border"
-              type="text"
-              name="Email"
-              onchange="EmailChanged()"
-              required
-            />
-          </div>
-          <div class="w3-section">
-            <label>Mensagem</label>
-            <input
-              class="w3-input w3-border"
-              type="text"
-              name="Message"
-              onchange="MessageChanged()"
-              required
-            />
-          </div>
-          <a
-            name="botao"
-            type="button"
-            class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom"
-            onclick="Teste()"
-          >
-            Enviar Mensagem
-          </a>
-        </form>
-      </div>
-      <div class="w3-container" style="margin-top: 40px">
-        <div class="w3-container" style="display: inline;">
-          <img src="./assets/phone.png" height="32px" alt="telefone" />
-          <p style="display: inline">Telefone:</p>
-          <span>(66) 3522-1343</span>
-        </div>
-        <div class="w3-container" style="display: inline">
-          <img src="./assets/whatsapp.png" height="32px" alt="whatsapp" />
-          <p style="display: inline">WhatsApp:</p>
-          <span>(66) 9 8402-2241</span>
-        </div>
-      </div>
-
-      <!-- End page content -->
-    </div>
-
-    <!-- W3.CSS Container -->
-    <div
-      class="w3-light-grey w3-container w3-padding-32"
-      style="margin-top:75px;padding-right:58px"
-    >
-      <p class="w3-right">
-        Designed by
-        <a
-          href="https://www.linkedin.com/in/h%C3%A9ber-abreu-926823a8/"
-          title="W3.CSS"
-          target="_blank"
-          class="w3-hover-opacity"
-          >Héber Abreu</a
-        >
-      </p>
-    </div>
-
-    <script src="script.js"></script>
-  </body>
+      <script src="script.js"></script>
+   </body>
 </html>
